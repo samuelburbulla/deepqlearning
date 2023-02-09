@@ -7,7 +7,7 @@ class ActionSpace:
 
   def __init__(self):
     self.n = 3
-
+    self.actions = [-1, 0, 1]
 
 class State:
   """The state: Current prices and if has asset."""

@@ -25,7 +25,6 @@ num_actions = 3
 def createModel():
     inputs = layers.Input(shape=(n+1,))
     layer1 = layers.Dense(128, activation="relu")(inputs)
-    layer1 = layers.Dense(128, activation="relu")(inputs)
     action = layers.Dense(num_actions, activation="linear")(layer1)
     return keras.Model(inputs=inputs, outputs=action)
 
